@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>node test page</title>
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="javascript/soi.js"></script>
+<script type="text/javascript">
+function  ptest(form){
+  
+  if(form.ps.value==form.ps2.value){
+
+    return true;
+  }
+  else{
+  var ud=document.getElementById("newUserNote");
+  ud.innerHTML="The passwords must match."
+  return false;
+  }
+}
+</script>
+</head>
+<body>
+<div id="signUp" >
+  <t1 >Sign Up</t1> <br>
+  <div id="newUser"  style="float:left">
+
+    <form action="process_post" method="POST" onsubmit="return ptest(this);">
+      First Name : <input name="fn"><br>
+      Last Name : <input name="ln"><br> 
+      username : <input name="un"><br>
+      password : <input type="password" name="ps"><br>
+      password : <input type="password" name="ps2"><br>
+      email : <input name="email"><br>      
+      <input type="submit" value="Sumbit">
+    </form>
+  </div>
+  <div id="newUserNote" style="float:left">
+    User Sign Up
+  </div>
+</div>
+</body>
+</html>

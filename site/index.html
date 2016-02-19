@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>bio web info : a bioinformatics service</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="bioinfo web homepage" />
+    <meta name="author" content="Alexander Griffith" />
+    <link rel="stylesheet" type="text/css" href="horizontal.css">
+    <link rel="stylesheet" type="text/css" href="post.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <script type="text/javascript" src="window-resize.js"></script>
+    <script type="text/javascript" src="jsrender.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Vollkorn.css">
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script>
+history.pushState(null, null, '');
+window.addEventListener('popstate', function(event) {
+  history.pushState(null, null, '');
+});
+</script> 
+	
+  </head>
+  <body onload="main()" >
+    <div id="bodyW" >
+      <div id="content">
+<!--	background-color:#fff;-->
+	  <nav style="min-width:450px;">
+            <ul id="nav">
+              <li class="nav"><a onclick="return services()" href="services" class="nav">Services</a></li>
+              <li class="nav"><a  onclick="return news()" href="" class="nav">News</a></li>
+	      <li class="nav"><a onclick="return meet()" href="" class="nav">Team Members</a></li>	      
+              <li class="nav"><a onclick="return contact()" href="" class="nav">Contact</a></li>
+	      <li class="nav" style="padding-top:15px;padding-left:5px">
+		<!--<a href="https://twitter.com/share"  class="twitter-share-button" data-url="http://www.biowebinfo.com/" data-via="biowebinfo" data-hashtags="biowebinfo" data-dnt="true"></a>-->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.biowebinfo.com/" data-via="biowebinfo"  data-hashtags="biowebinfo" data-size="large" data-dnt="true"></a>
+
+	      </li>
+	      <ul style="float:right;list-style-type:none;">
+		<li class="nav"><a onclick="return about()" class="nav" href="">About</a></li>
+		<li class="nav"><a onclick="return login()" class="nav" href="">Login</a></li>
+	      </ul>
+            </ul>
+          </nav>
+	  <div id="conts">
+
+	  </div>
+
+	  
+	  <footer style="min-width:450px;">
+	    <p class="footer"> biowebinfo &copy 2016</p>
+	    <p class="footer">Alexander Griffith &#x26AC <a href="mailto:griffitaj@protonmail.com"> griffitaj@protonmail.com</a></p>
+	  </footer>
+      </div>
+  </body>
+</html>

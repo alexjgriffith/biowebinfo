@@ -1,0 +1,17 @@
+{
+    "name": "socket-chat-example",
+    "version": "0.0.1",
+    "description": "my first socket.ioi app",
+    "private":true,
+    "dependencies": {
+	"zmq":"*",
+	"crypto-js": "*",
+	"express": "*",
+	"body-parser": "*",
+	"express": "*",
+	"socket.io":"*",
+	"http":"*",
+	"fs":"*",
+	"node-uuid":"*"
+    }
+}

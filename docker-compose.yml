@@ -1,0 +1,19 @@
+nginx:
+  build: ./nginx
+  links:
+    - node1:node1
+    - node2:node2
+  ports:
+    - "8080:80"
+node1:
+  build: ./nodejs
+  ports:
+    - "8000"
+  volumes:
+    - ~/Development/nodejs/src:/src
+node2:
+  build: ./nodejs
+  ports:
+    - "8000"
+  volumes:
+    - ~/Development/nodejs/src:/src
